@@ -40,11 +40,15 @@
     ],
     "external_apps": [
       {
-        "id": "preview",
-        "path": "web-app-preview",
+        "id": "360",
+        "path": "web-app-360-viewer",
         "config": {
-          "mimeTypes": ["image/tiff", "image/bmp", "image/x-ms-bmp"]
+          "mimeTypes": ["image/jpeg", "image/png", "image/tiff"]
         }
+      },
+      {
+        "id": "360-viewer",
+        "path": "http://localhost:8082/js/web-app-360-viewer.js"
       }
     ]
   }
