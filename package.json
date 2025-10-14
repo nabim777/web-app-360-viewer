@@ -1,32 +1,35 @@
 {
-    "name": "web-app-360-viewer",
-    "version": "0.0.1",
-    "description": "360 Viewer for ownCloud Web",
-    "license": "Apache-2.0",
-    "private": true,
-    "type": "module",
-    "scripts": {
-      "build": "pnpm vite build",
-      "build:w": "pnpm vite build --watch --mode development"
-    },
-    "devDependencies": {
-      "@ownclouders/extension-sdk": "0.0.5-alpha.2",
-      "@ownclouders/prettier-config": "0.0.1",
-      "@ownclouders/tsconfig": "0.0.6",
-      "typescript": "~5.3.3",
-      "vite": "^5.0.12",
-      "vue": "^3.4.16"
-    },
-    "peerDependencies": {
-      "@ownclouders/web-client": "0.0.1",
-      "@ownclouders/web-pkg": "0.0.5-alpha.9"
-    },
-    "pnpm": {
-      "peerDependencyRules": {
-        "ignoreMissing": [
-          "design-system"
-        ]
-      }
-    },
-    "packageManager": "pnpm@8.15.1"
+  "name": "web-app-360-viewer",
+  "version": "0.0.1",
+  "description": "360 Viewer for ownCloud Web",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm vite build",
+    "build:w": "pnpm vite build --watch --mode development"
+  },
+  "dependencies": {
+    "@photo-sphere-viewer/core": "^5.14.0"
+  },
+  "devDependencies": {
+    "@ownclouders/extension-sdk": "0.0.5-alpha.2",
+    "@ownclouders/prettier-config": "0.0.1",
+    "@ownclouders/tsconfig": "0.0.6",
+    "typescript": "~5.3.3",
+    "vite": "^5.0.12",
+    "vue": "^3.4.16"
+  },
+  "peerDependencies": {
+    "@ownclouders/web-client": "0.0.1",
+    "@ownclouders/web-pkg": "0.0.5-alpha.9"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "design-system"
+      ]
+    }
+  },
+  "packageManager": "pnpm@8.15.1"
 }
